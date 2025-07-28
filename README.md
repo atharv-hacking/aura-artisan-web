@@ -1,73 +1,152 @@
-# Welcome to your Lovable project
+# Developer Portfolio Website
 
-## Project info
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. This project showcases a clean, professional design with smooth animations and an intuitive user experience.
 
-**URL**: https://lovable.dev/projects/ed098faa-93bc-445a-97af-13fd2d58cabb
+## 🌟 Features
 
-## How can I edit this code?
+### Core Sections
+- **Hero Section** - Eye-catching introduction with animated gradient background
+- **About** - Personal story and key development principles
+- **Skills** - Organized technology showcase with interactive badges
+- **Projects** - Portfolio gallery with project details and links
+- **Contact** - Functional contact form with validation
 
-There are several ways of editing your application.
+### Design & UX
+- **Responsive Design** - Optimized for all device sizes
+- **Smooth Animations** - Engaging hover effects and scroll animations
+- **Modern UI** - Clean design with gradient accents and elegant shadows
+- **Accessibility** - Proper contrast ratios and semantic HTML
+- **Performance** - Optimized loading and smooth interactions
 
-**Use Lovable**
+### Technical Features
+- **React 18** with TypeScript for type safety
+- **Tailwind CSS** with custom design system
+- **Responsive Navigation** with mobile menu
+- **Form Validation** with toast notifications
+- **Smooth Scroll** navigation between sections
+- **Custom Components** built with Radix UI primitives
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ed098faa-93bc-445a-97af-13fd2d58cabb) and start prompting.
+## 🚀 Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
+- Node.js (version 16 or higher)
+- npm or yarn package manager
 
-**Use your preferred IDE**
+### Installation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/portfolio-website.git
+   cd portfolio-website
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-Follow these steps:
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+4. **Open your browser**
+   Navigate to `http://localhost:8080` to view the website
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Build for Production
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+The built files will be in the `dist` directory, ready for deployment.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🛠️ Tech Stack
 
-**Use GitHub Codespaces**
+- **Frontend Framework:** React 18
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Build Tool:** Vite
+- **UI Components:** Radix UI
+- **Icons:** Lucide React
+- **Form Handling:** React Hook Form
+- **Routing:** React Router DOM
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📁 Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/           # Reusable UI components
+│   ├── ui/              # Base UI components (buttons, cards, etc.)
+│   ├── Hero.tsx         # Hero section component
+│   ├── About.tsx        # About section component
+│   ├── Skills.tsx       # Skills showcase component
+│   ├── Projects.tsx     # Projects gallery component
+│   ├── Contact.tsx      # Contact form component
+│   ├── Navigation.tsx   # Navigation component
+│   └── Footer.tsx       # Footer component
+├── pages/               # Page components
+│   ├── Index.tsx        # Main portfolio page
+│   └── NotFound.tsx     # 404 error page
+├── hooks/               # Custom React hooks
+├── lib/                 # Utility functions
+└── index.css           # Global styles and design tokens
+```
 
-This project is built with:
+## 🎨 Customization
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Design System
+The project uses a comprehensive design system defined in `src/index.css` and `tailwind.config.ts`. You can easily customize:
 
-## How can I deploy this project?
+- **Colors:** Modify CSS custom properties in `src/index.css`
+- **Typography:** Update font families and sizes in the Tailwind config
+- **Animations:** Add or modify keyframes and animations
+- **Components:** Customize component variants in `src/components/ui/`
 
-Simply open [Lovable](https://lovable.dev/projects/ed098faa-93bc-445a-97af-13fd2d58cabb) and click on Share -> Publish.
+### Content
+Update the following files to personalize the portfolio:
 
-## Can I connect a custom domain to my Lovable project?
+- **Personal Information:** `src/components/Hero.tsx`
+- **About Content:** `src/components/About.tsx`
+- **Skills:** `src/components/Skills.tsx`
+- **Projects:** `src/components/Projects.tsx`
+- **Contact Details:** `src/components/Contact.tsx`
 
-Yes, you can!
+## 📱 Responsive Design
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+The website is fully responsive and optimized for:
+- **Desktop:** Full-featured layout with hover effects
+- **Tablet:** Adapted grid layouts and navigation
+- **Mobile:** Collapsible navigation and stacked content
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🚀 Deployment
+
+This project can be deployed to any static hosting service:
+
+- **Vercel:** Connect your GitHub repository for automatic deployments
+- **Netlify:** Drag and drop the `dist` folder or connect via Git
+- **GitHub Pages:** Use GitHub Actions for automated deployment
+- **AWS S3:** Upload the build files to an S3 bucket
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- Design inspiration from modern portfolio websites
+- Icons provided by [Lucide React](https://lucide.dev/)
+- UI components built with [Radix UI](https://www.radix-ui.com/)
+- Styling powered by [Tailwind CSS](https://tailwindcss.com/)
+
+---
+
+**Built with ❤️ and lots of coffee ☕**
