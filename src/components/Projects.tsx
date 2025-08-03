@@ -77,12 +77,16 @@ const Projects = () => {
               </CardContent>
               
               <CardFooter className="flex gap-3">
-                <Button variant="outline" size="sm" className="flex-1 group/btn">
-                  <ExternalLink className="mr-2 h-4 w-4 group-hover/btn:scale-110 transition-transform" />
-                  Live Demo
+                <Button variant="outline" size="sm" className="flex-1 group/btn" asChild>
+                  <a href={project.liveUrl === "#" ? "https://github.com" : project.liveUrl} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2 h-4 w-4 group-hover/btn:scale-110 transition-transform" />
+                    Live Demo
+                  </a>
                 </Button>
-                <Button variant="ghost" size="sm" className="group/btn">
-                  <Github className="h-4 w-4 group-hover/btn:scale-110 transition-transform" />
+                <Button variant="ghost" size="sm" className="group/btn" asChild>
+                  <a href={project.githubUrl === "#" ? "https://github.com" : project.githubUrl} target="_blank" rel="noopener noreferrer">
+                    <Github className="h-4 w-4 group-hover/btn:scale-110 transition-transform" />
+                  </a>
                 </Button>
               </CardFooter>
             </Card>

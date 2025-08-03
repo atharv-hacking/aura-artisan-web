@@ -24,24 +24,28 @@ const Hero = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
-          <Button variant="hero" size="lg" className="group">
-            <Mail className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-            Get In Touch
+          <Button variant="hero" size="lg" className="group" asChild>
+            <a href="mailto:alex.thompson@example.com">
+              <Mail className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+              Get In Touch
+            </a>
           </Button>
-          <Button variant="outline-hero" size="lg" className="group">
-            <Download className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-            Download Resume
+          <Button variant="outline-hero" size="lg" className="group" asChild>
+            <a href="https://drive.google.com" target="_blank" rel="noopener noreferrer">
+              <Download className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+              Download Resume
+            </a>
           </Button>
         </div>
         
         <div className="flex justify-center gap-6 mt-12 animate-scale-in">
-          <a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors hover:scale-110 transform duration-300">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/80 hover:text-accent transition-colors hover:scale-110 transform duration-300">
             <Github className="h-8 w-8" />
           </a>
-          <a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors hover:scale-110 transform duration-300">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/80 hover:text-accent transition-colors hover:scale-110 transform duration-300">
             <Linkedin className="h-8 w-8" />
           </a>
-          <a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors hover:scale-110 transform duration-300">
+          <a href="mailto:alex.thompson@example.com" className="text-primary-foreground/80 hover:text-accent transition-colors hover:scale-110 transform duration-300">
             <Mail className="h-8 w-8" />
           </a>
         </div>
