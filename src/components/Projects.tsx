@@ -6,28 +6,28 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
+      title: "Chef Buddy",
+      description: "An intelligent cooking companion that suggests recipes based on available ingredients and dietary preferences.",
       image: "/api/placeholder/400/250",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      liveUrl: "#",
-      githubUrl: "#"
+      technologies: ["React", "TypeScript", "OpenAI API", "Tailwind"],
+      liveUrl: "https://ingredient-chef-buddy.lovable.app/",
+      githubUrl: "https://github.com"
     },
     {
       title: "Task Management App",
       description: "Collaborative project management tool with real-time updates, file sharing, and team communication.",
       image: "/api/placeholder/400/250",
       technologies: ["Next.js", "TypeScript", "MongoDB", "Socket.io"],
-      liveUrl: "#",
-      githubUrl: "#"
+      liveUrl: "https://task-ace-maker.lovable.app/",
+      githubUrl: "https://github.com"
     },
     {
       title: "Weather Dashboard",
       description: "Interactive weather application with location-based forecasts, charts, and historical data analysis.",
       image: "/api/placeholder/400/250",
       technologies: ["Vue.js", "Chart.js", "OpenWeather API", "Tailwind"],
-      liveUrl: "#",
-      githubUrl: "#"
+      liveUrl: "https://sky-cue.lovable.app/",
+      githubUrl: "https://github.com"
     }
   ];
 
