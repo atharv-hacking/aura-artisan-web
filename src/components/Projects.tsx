@@ -8,7 +8,7 @@ const Projects = () => {
     {
       title: "Chef Buddy",
       description: "An intelligent cooking companion that suggests recipes based on available ingredients and dietary preferences.",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=250&fit=crop",
+      image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=250&fit=crop",
       technologies: ["React", "TypeScript", "OpenAI API", "Tailwind"],
       liveUrl: "https://ingredient-chef-buddy.lovable.app/",
       githubUrl: "https://github.com"
@@ -24,7 +24,7 @@ const Projects = () => {
     {
       title: "Weather Dashboard",
       description: "Interactive weather application with location-based forecasts, charts, and historical data analysis.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=250&fit=crop",
+      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=250&fit=crop",
       technologies: ["Vue.js", "Chart.js", "OpenWeather API", "Tailwind"],
       liveUrl: "https://sky-cue.lovable.app/",
       githubUrl: "https://github.com"
