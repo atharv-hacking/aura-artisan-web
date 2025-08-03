@@ -8,7 +8,7 @@ const Projects = () => {
     {
       title: "Chef Buddy",
       description: "An intelligent cooking companion that suggests recipes based on available ingredients and dietary preferences.",
-      image: "/api/placeholder/400/250",
+      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=250&fit=crop",
       technologies: ["React", "TypeScript", "OpenAI API", "Tailwind"],
       liveUrl: "https://ingredient-chef-buddy.lovable.app/",
       githubUrl: "https://github.com"
@@ -16,7 +16,7 @@ const Projects = () => {
     {
       title: "Task Management App",
       description: "Collaborative project management tool with real-time updates, file sharing, and team communication.",
-      image: "/api/placeholder/400/250",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop",
       technologies: ["Next.js", "TypeScript", "MongoDB", "Socket.io"],
       liveUrl: "https://task-ace-maker.lovable.app/",
       githubUrl: "https://github.com"
@@ -24,7 +24,7 @@ const Projects = () => {
     {
       title: "Weather Dashboard",
       description: "Interactive weather application with location-based forecasts, charts, and historical data analysis.",
-      image: "/api/placeholder/400/250",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=250&fit=crop",
       technologies: ["Vue.js", "Chart.js", "OpenWeather API", "Tailwind"],
       liveUrl: "https://sky-cue.lovable.app/",
       githubUrl: "https://github.com"
@@ -51,9 +51,11 @@ const Projects = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="relative overflow-hidden rounded-t-lg">
-                <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <div className="text-muted-foreground">Project Image</div>
-                </div>
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               
