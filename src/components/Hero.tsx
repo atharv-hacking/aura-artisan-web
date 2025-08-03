@@ -31,7 +31,7 @@ const Hero = () => {
             </a>
           </Button>
           <Button variant="outline-hero" size="lg" className="group" asChild>
-            <a href="https://drive.google.com" target="_blank" rel="noopener noreferrer">
+            <a href="/Alex_Thompson_Resume.pdf" download="Alex_Thompson_Resume.pdf">
               <Download className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
               Download Resume
             </a>
