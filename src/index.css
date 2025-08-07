@@ -32,6 +32,8 @@ All colors MUST be HSL.
     /* Portfolio specific colors */
     --hero-gradient-start: 240 100% 65%;
     --hero-gradient-end: 270 95% 75%;
+    --name-gradient-start: 280 100% 70%;
+    --name-gradient-end: 240 100% 60%;
     --skill-primary: 217 91% 60%;
     --skill-secondary: 262 83% 58%;
     --project-accent: 280 100% 70%;
@@ -43,6 +45,7 @@ All colors MUST be HSL.
     
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--hero-gradient-start)), hsl(var(--hero-gradient-end)));
+    --gradient-name: linear-gradient(135deg, hsl(var(--name-gradient-start)), hsl(var(--name-gradient-end)));
     --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--muted)) 100%);
     --gradient-skill: linear-gradient(90deg, hsl(var(--skill-primary)), hsl(var(--skill-secondary)));
     

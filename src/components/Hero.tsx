@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Download, Github, Linkedin, Mail } from "lucide-react";
+import { Download, Github, Twitter, Mail } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -14,8 +14,8 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6">
             Hi, I'm{" "}
-            <span className="bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
-              Alex Thompson
+            <span className="bg-[--gradient-name] bg-clip-text text-transparent font-extrabold drop-shadow-lg" style={{ background: 'var(--gradient-name)' }}>
+              Atharv
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto">
@@ -25,13 +25,13 @@ const Hero = () => {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
           <Button variant="hero" size="lg" className="group" asChild>
-            <a href="mailto:alex.thompson@example.com">
+            <a href="mailto:blu903393@gmail.com">
               <Mail className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
               Get In Touch
             </a>
           </Button>
           <Button variant="outline-hero" size="lg" className="group" asChild>
-            <a href="/Alex_Thompson_Resume.pdf" download="Alex_Thompson_Resume.pdf">
+            <a href="/Alex_Thompson_Resume.pdf" download="Atharv_Resume.pdf">
               <Download className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
               Download Resume
             </a>
@@ -39,13 +39,13 @@ const Hero = () => {
         </div>
         
         <div className="flex justify-center gap-6 mt-12 animate-scale-in">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/80 hover:text-accent transition-colors hover:scale-110 transform duration-300">
+          <a href="https://github.com/atharv-hacking" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/80 hover:text-accent transition-colors hover:scale-110 transform duration-300">
             <Github className="h-8 w-8" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/80 hover:text-accent transition-colors hover:scale-110 transform duration-300">
-            <Linkedin className="h-8 w-8" />
+          <a href="https://x.com/blu_3121" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/80 hover:text-accent transition-colors hover:scale-110 transform duration-300">
+            <Twitter className="h-8 w-8" />
           </a>
-          <a href="mailto:alex.thompson@example.com" className="text-primary-foreground/80 hover:text-accent transition-colors hover:scale-110 transform duration-300">
+          <a href="mailto:blu903393@gmail.com" className="text-primary-foreground/80 hover:text-accent transition-colors hover:scale-110 transform duration-300">
             <Mail className="h-8 w-8" />
           </a>
         </div>
