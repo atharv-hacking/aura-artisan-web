@@ -37,7 +37,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <div className="text-xl font-bold text-foreground">
-            Alex<span className="text-primary">.</span>
+            Atharv<span className="text-primary">.</span>
           </div>
           
           {/* Desktop Navigation */}
