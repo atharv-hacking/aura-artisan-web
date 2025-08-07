@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6">
             Hi, I'm{" "}
-            <span className="bg-[--gradient-name] bg-clip-text text-transparent font-extrabold drop-shadow-lg" style={{ background: 'var(--gradient-name)' }}>
+            <span className="text-accent font-extrabold drop-shadow-lg text-shadow-glow animate-pulse">
               Atharv
             </span>
           </h1>

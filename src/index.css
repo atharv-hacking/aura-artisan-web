@@ -52,6 +52,9 @@ All colors MUST be HSL.
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Text effects */
+    --text-shadow-glow: 0 0 20px hsl(var(--accent) / 0.6);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
