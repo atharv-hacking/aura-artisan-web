@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { Github, Twitter, Mail, Heart } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <div className="text-xl font-bold text-foreground mb-2">
-              Alex<span className="text-primary">.</span>
+              Atharv<span className="text-primary">.</span>
             </div>
             <p className="text-muted-foreground">
               Building digital experiences with passion
@@ -18,7 +18,7 @@ const Footer = () => {
           
           <div className="flex space-x-6">
             <a 
-              href="https://github.com" 
+              href="https://github.com/atharv-hacking" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors hover:scale-110 transform duration-200"
@@ -27,16 +27,16 @@ const Footer = () => {
               <Github className="h-6 w-6" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://x.com/blu_3121" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors hover:scale-110 transform duration-200"
-              aria-label="LinkedIn"
+              aria-label="Twitter"
             >
-              <Linkedin className="h-6 w-6" />
+              <Twitter className="h-6 w-6" />
             </a>
             <a 
-              href="mailto:alex.thompson@example.com" 
+              href="mailto:blu903393@gmail.com" 
               className="text-muted-foreground hover:text-primary transition-colors hover:scale-110 transform duration-200"
               aria-label="Email"
             >
@@ -47,7 +47,7 @@ const Footer = () => {
         
         <div className="border-t border-border/50 mt-8 pt-8 text-center">
           <p className="text-muted-foreground flex items-center justify-center gap-2">
-            © {currentYear} Alex Thompson. Made with 
+            © {currentYear} Atharv. Made with 
             <Heart className="h-4 w-4 text-red-500 fill-current" />
             and lots of coffee.
           </p>
