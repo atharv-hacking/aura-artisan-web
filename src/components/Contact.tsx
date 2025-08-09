@@ -4,8 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, MapPin, Phone } from "lucide-react";
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
+import { useToast } from "@/components/ui/use-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -22,6 +22,22 @@ const Contact = () => {
       [e.target.name]: e.target.value
     }));
   };
+  
+  const { toast } = useToast();
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("submitted") === "1") {
+        toast({
+          title: "Message sent",
+          description: "Thanks! I'll get back to you within 24 hours.",
+        });
+        const url = new URL(window.location.href);
+        url.searchParams.delete("submitted");
+        window.history.replaceState({}, "", url.toString());
+      }
+    }
+  }, [toast]);
 
   return (
     <section id="contact" className="py-20 bg-muted/30">
@@ -44,7 +60,8 @@ const Contact = () => {
               <form action="https://formsubmit.co/b82077f1e53f17ab1fecbaf5354ae46a" method="POST" className="space-y-6">
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_subject" value="New portfolio contact message" />
-                <input type="hidden" name="_next" value="/" />
+                <input type="hidden" name="_next" value="https://preview--aura-artisan-web.lovable.app/?submitted=1" />
+                <input type="hidden" name="_template" value="table" />
                 <input type="text" name="_honey" className="hidden" />
                 <div>
                   <Label htmlFor="name" className="text-card-foreground">Name</Label>
