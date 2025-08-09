@@ -11,7 +11,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=250&fit=crop",
       technologies: ["React", "TypeScript", "OpenAI API", "Tailwind"],
       liveUrl: "https://ingredient-chef-buddy.lovable.app/",
-      githubUrl: "https://github.com/atharv-hacking"
+      githubUrl: "https://github.com/atharv-hacking/chef-buddy"
     },
     {
       title: "Task Management App",
@@ -19,7 +19,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop",
       technologies: ["Next.js", "TypeScript", "MongoDB", "Socket.io"],
       liveUrl: "https://task-ace-maker.lovable.app/",
-      githubUrl: "https://github.com/atharv-hacking"
+      githubUrl: "https://github.com/atharv-hacking/Todo-List-Web"
     },
     {
       title: "Weather Dashboard",
@@ -27,7 +27,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=250&fit=crop",
       technologies: ["Vue.js", "Chart.js", "OpenWeather API", "Tailwind"],
       liveUrl: "https://sky-cue.lovable.app/",
-      githubUrl: "https://github.com/atharv-hacking"
+      githubUrl: "https://github.com/atharv-hacking/sky-cue"
     }
   ];
 
