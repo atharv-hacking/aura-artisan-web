@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,17 +13,8 @@ const Contact = () => {
     email: '',
     message: ''
   });
-  const { toast } = useToast();
+  
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Simulate form submission
-    toast({
-      title: "Message sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
-    });
-    setFormData({ name: '', email: '', message: '' });
-  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
@@ -50,7 +41,11 @@ const Contact = () => {
               <CardTitle className="text-2xl text-card-foreground">Send a Message</CardTitle>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form action="https://formsubmit.co/blu903393@gmail.com" method="POST" className="space-y-6">
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_subject" value="New portfolio contact message" />
+                <input type="hidden" name="_next" value="/" />
+                <input type="text" name="_honey" className="hidden" />
                 <div>
                   <Label htmlFor="name" className="text-card-foreground">Name</Label>
                   <Input

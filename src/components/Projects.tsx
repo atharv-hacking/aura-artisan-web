@@ -11,7 +11,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=250&fit=crop",
       technologies: ["React", "TypeScript", "OpenAI API", "Tailwind"],
       liveUrl: "https://ingredient-chef-buddy.lovable.app/",
-      githubUrl: "https://github.com"
+      githubUrl: "https://github.com/atharv-hacking"
     },
     {
       title: "Task Management App",
@@ -19,7 +19,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop",
       technologies: ["Next.js", "TypeScript", "MongoDB", "Socket.io"],
       liveUrl: "https://task-ace-maker.lovable.app/",
-      githubUrl: "https://github.com"
+      githubUrl: "https://github.com/atharv-hacking"
     },
     {
       title: "Weather Dashboard",
@@ -27,7 +27,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=250&fit=crop",
       technologies: ["Vue.js", "Chart.js", "OpenWeather API", "Tailwind"],
       liveUrl: "https://sky-cue.lovable.app/",
-      githubUrl: "https://github.com"
+      githubUrl: "https://github.com/atharv-hacking"
     }
   ];
 
@@ -80,13 +80,13 @@ const Projects = () => {
               
               <CardFooter className="flex gap-3">
                 <Button variant="outline" size="sm" className="flex-1 group/btn" asChild>
-                  <a href={project.liveUrl === "#" ? "https://github.com" : project.liveUrl} target="_blank" rel="noopener noreferrer">
+                  <a href={project.liveUrl === "#" ? "https://github.com/atharv-hacking" : project.liveUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="mr-2 h-4 w-4 group-hover/btn:scale-110 transition-transform" />
                     Live Demo
                   </a>
                 </Button>
                 <Button variant="ghost" size="sm" className="group/btn" asChild>
-                  <a href={project.githubUrl === "#" ? "https://github.com" : project.githubUrl} target="_blank" rel="noopener noreferrer">
+                  <a href={project.githubUrl === "#" ? "https://github.com/atharv-hacking" : project.githubUrl} target="_blank" rel="noopener noreferrer">
                     <Github className="h-4 w-4 group-hover/btn:scale-110 transition-transform" />
                   </a>
                 </Button>
