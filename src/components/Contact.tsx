@@ -41,7 +41,7 @@ const Contact = () => {
               <CardTitle className="text-2xl text-card-foreground">Send a Message</CardTitle>
             </CardHeader>
             <CardContent>
-              <form action="https://formsubmit.co/blu903393@gmail.com" method="POST" className="space-y-6">
+              <form action="https://formsubmit.co/b82077f1e53f17ab1fecbaf5354ae46a" method="POST" className="space-y-6">
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_subject" value="New portfolio contact message" />
                 <input type="hidden" name="_next" value="/" />
